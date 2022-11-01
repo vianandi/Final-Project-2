@@ -39,11 +39,12 @@
     
     <TextView
         android:id="@+id/login_admin"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/btn_register"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
         android:textAlignment="textEnd"
         android:text="Login as Admin"
         android:textColor="@color/white">
@@ -51,11 +52,12 @@
 
     <TextView
         android:id="@+id/login_staff"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/btn_register"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
         android:text="Login as Staff"
         android:textColor="@color/white">
     </TextView>
