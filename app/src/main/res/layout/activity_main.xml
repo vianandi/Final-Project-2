@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_dynamic"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/transparant"
+        android:text="Have an Account? Login">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_user"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/transparant"
+        android:text="Don't have account? Register">
+    </Button>
+    
+    <TextView
+        android:id="@+id/login_admin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_register"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textEnd"
+        android:text="Login as Admin"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:id="@+id/login_staff"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_register"
+        android:layout_marginTop="10dp"
+        android:text="Login as Staff"
+        android:textColor="@color/white">
+    </TextView>
+
+</RelativeLayout>
