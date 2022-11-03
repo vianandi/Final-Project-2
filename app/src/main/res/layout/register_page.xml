@@ -97,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_register"
-        android:text="Existing User? Login."
+        android:text="Existing User? Login here."
         android:textColor="@color/white"
         android:textAlignment="center"/>
 </RelativeLayout>
