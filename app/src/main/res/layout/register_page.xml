@@ -34,8 +34,25 @@
 
     <com.google.android.material.textfield.TextInputLayout
 
-        android:id="@+id/inputlogin_email"
+        android:id="@+id/input_name"
         android:layout_below="@id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/inputlogin_email"
+        android:layout_below="@id/input_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp">
@@ -66,20 +83,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/inputlogin_password"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:text="REGISTER"
         android:backgroundTint="@color/black"/>
 
 
     <TextView
-        android:id="@+id/text_register"
+        android:id="@+id/text_login_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login"
+        android:layout_below="@+id/btn_register"
         android:text="Existing User? Login."
         android:textColor="@color/white"
         android:textAlignment="center"/>
