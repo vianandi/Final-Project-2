@@ -23,6 +23,7 @@ public class login extends AppCompatActivity  {
         mAuth = FirebaseAuth.getInstance();
         email = findViewById(R.id.login_email);
         password = findViewById(R.id.login_password);
+        textRegister = findViewById(R.id.text_register);
 
         // Hide ActionBar          //untuk menyembunyikan action bar
         if (getSupportActionBar() != null) {
