@@ -1,4 +1,4 @@
-# Final-Project-2
+# Final-Project-2 Untuk semua filenya ada di branch MASTER
 
 Modul Admin & Database	: Oktavian Andi Cahya Nugraha
 Modul Products 1 	      : Syahrul Yuda Prasetya
