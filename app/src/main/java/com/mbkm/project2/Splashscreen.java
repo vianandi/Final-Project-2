@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Toast;
 
 public class Splashscreen extends AppCompatActivity {
     @Override
@@ -21,12 +22,13 @@ public class Splashscreen extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+//        Toast.makeText(this, "Wait for the process", Toast.LENGTH_SHORT).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(Splashscreen.this, MainActivity.class));
                 finish();
             }
-        }, 1500);   // timer
+        }, 5500);   // timer
     }
 }

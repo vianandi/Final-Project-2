@@ -7,13 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".Splashscreen"
     android:id="@+id/splash_screen"
-    android:background="@color/black">
+    android:background="@color/white">
 
     <ImageView
-        android:layout_width="325dp"
-        android:layout_height="325dp"
-        android:layout_centerInParent="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/black_logo" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg3" />
 
 </RelativeLayout>

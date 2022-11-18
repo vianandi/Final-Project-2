@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/bg3"
+    tools:context=".admin_addStaff">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/add_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="ADD STAFF"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_staff"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_name"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="ID Staff"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_ID"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Phone"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_phone"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Address"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_email_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_address"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_loginpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_email_staff"
+        android:background="@color/blue_black"
+        android:padding="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Login pass"
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/smoke"
+        android:textSize="18sp">
+    </EditText>
+
+
+
+    <Button
+        android:id="@+id/btn_add_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_loginpass"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Add Staff"
+        android:backgroundTint="@color/blue_black"/>
+
+</RelativeLayout>
